@@ -221,9 +221,8 @@ function dragLeave(box: BoxProps) {
 
 function drop() {
   // console.log("DROP target ID", target?.id);
-  let boxesParentDraggable = boxes.value;
-
-  if(target && draggable){
+  if(target && target.isEmpty && draggable){
+    let boxesParentDraggable = boxes.value;
     target.isHover = false;
 
     if(draggable.parent){
