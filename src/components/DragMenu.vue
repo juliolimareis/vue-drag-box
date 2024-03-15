@@ -419,7 +419,7 @@ function onFindBox({
 
 function handleGroup(){
   if(selectedBox.value){
-    selectedBox.value.draggable = !selectedBox.value.draggable ?? true;
+    selectedBox.value.draggable = !selectedBox.value.draggable || true;
     selectedBox.value.item.draggable = !selectedBox.value.item.draggable;
   }
 }

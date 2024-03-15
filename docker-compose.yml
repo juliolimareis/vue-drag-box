@@ -1,0 +1,7 @@
+version: "3.7"
+
+services: 
+  vue-drag-box:
+    build: .
+    ports:
+      - 7070:80
